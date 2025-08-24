@@ -21,7 +21,7 @@
 # =================================================================================================
 
 import os
-import schedule
+
 import time
 import google.generativeai as genai
 from twilio.rest import Client
