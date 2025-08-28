@@ -36,7 +36,7 @@ def generate_motivation_message():
     """Generates a motivational message using the Gemini API."""
     try:
         model = genai.GenerativeModel("models/gemini-1.5-flash")  # ✅ supported model
-        prompt = "Generate a savage, tough-love motivational message for a coder procrastinating on their FAANG grind. Keep it long of 100 words, brutal, and to the point. Include hype emojis like 💀, 🔥, ⚔️, 💻."
+        prompt = "Generate a savage, tough-love motivational message for a coder procrastinating on their FAANG grind. Keep it long of 100 words, brutal, and to the point. Include hype emojis like 💀, 🔥, ⚔️, 💻 and at the end give me one dsa mastering advice aprt form the motivation."
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
